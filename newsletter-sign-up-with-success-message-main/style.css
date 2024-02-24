@@ -18,10 +18,12 @@ body {
     font-weight: 400;
     font-size: 16px;
     background-color: var(--Neutral-clr-Charcoal-Grey);
-    min-height: 100vh;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+
 }
 
 .info{
@@ -31,7 +33,6 @@ body {
     flex-direction: row;
    background-color: white;
     margin: auto;   
-    position: fixed; 
     border-radius: 0.9rem;
 
 }
@@ -63,6 +64,9 @@ body {
     height: 93%;
     margin: 15px 0px 0px 55px;
     border-radius: inherit;
+}
+.info>.img-2{
+    display: none;
 }
 p{
     margin-top: 0.6rem;
@@ -98,4 +102,23 @@ button{
     border-radius: 0.3rem;
     color: white;
 }
+@media(max-width:756px){
+   
+    .info{
+        height:45rem ;
+        width: 23rem;
+        flex-direction: column-reverse;
+        margin-bottom: 3rem;
+        padding: 0;
+    }
+    .info>img{
+     display: none;
+    }
+    .info>.img-2{
+        display: flex;
+       width: 23rem;
+       position: relative;
+       right: 3.4rem;
+    }
 
+}
