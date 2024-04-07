@@ -1,42 +1,61 @@
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:  sans-serif;
 }
 html,body{
     width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* height: 100%; */
     /* background-color: red; */
 }
-.top{
-    width: 100%;
-    height: 30vh;
-    margin-bottom: 3rem;
-}
-.bottom{
-    height: 70vh;
-    width: 100%;
-    background-color: blue;
-    position: relative;
-}
-.faq-container{
-    width: 45%;
-    height: 34vh;
-    display: flex;
-    margin: auto;
-    background-color: aquamarine;
-    position: absolute;
-    translate: 50%;
-    top: 0rem;
-    z-index: 99;
-}
-.faq{
+.container{
+    width: 45vw;
+    height: 65vh;
+    background-color:hsl(0, 0%, 100%) ;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 36px;
     display: flex;
     flex-direction: column;
-    padding: 4vh 4vw;
 }
-.Qdiv{
+.logo{
+ display: flex;
+ gap: 10px;
+ margin-bottom: 2.5rem;
+}
+.logo h1{
+    font-size: 2.8rem;
+    word-spacing: 4rem;
+}
+.quest{
+ border-bottom: 0.1px solid rgb(127, 127, 127,0.1); 
+ min-height: 10%;  
+ margin-bottom: 2rem;
+ display: flex;
+ width: 100%;
+ height: 100%;
+flex-direction: column;
+}
+.Qfield{
     display: flex;
-    justify-content: space-between;
-    width: 75%;
+  
+    align-items: center;
+    cursor: pointer;
+   
+}
+
+
+
+@media (max-width:500px) {
+    .container{
+        width: calc(100% - 3rem);
+    }
 }
