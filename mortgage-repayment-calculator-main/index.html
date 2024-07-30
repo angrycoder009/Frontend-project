@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="parent">
+    <div class="child1"> 
+      <h1>Mortgage Calculator</h1>
+      <button class="clear-btn">Clear All</button>
+      <form>
+        <div class="form-group">
+          <label for="amount">Mortgage Amount</label>
+          <input type="text" id="amount" placeholder="£">
+        </div>
+        <div class="form-group">
+          <label for="term">Mortgage Term</label>
+          <input type="text" id="term" placeholder="years">
+        </div>
+        <div class="form-group">
+          <label for="rate">Interest Rate</label>
+          <input type="text" id="rate" placeholder="%">
+        </div>
+        <div class="form-group">
+          <label>Mortgage Type</label>
+          <div>
+            <input type="radio" id="repayment" name="mortgage-type" value="repayment">
+            <label for="repayment">Repayment</label>
+          </div>
+          <div>
+            <input type="radio" id="interest-only" name="mortgage-type" value="interest-only">
+            <label for="interest-only">Interest Only</label>
+          </div>
+        </div>
+        <button type="submit" class="calculate-btn">Calculate Repayments</button>
+      </form>
+    </div>
+    <div class="child2">
+      <div class="results-content">
+        <p>Results shown here</p>
+        <p>Complete the form and click "calculate repayments" to see what your monthly repayments would be.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Mortgage Calculator
+  Clear All
+
+  Mortgage Amount
+
+  Mortgage Term
+
+  Interest Rate
+
+  Mortgage Type
+  Repayment
+  Interest Only
+
+  Calculate Repayments
+
+  <!-- Empty results start -->
+
+  <!-- Results shown here
+
+  Complete the form and click “calculate repayments” to see what 
+  your monthly repayments would be. -->
+
+  <!-- Empty results end -->
+
+  <!-- Completed results start -->
+
+  <!-- Your results
+
+  Your results are shown below based on the information you provided. 
+  To adjust the results, edit the form and click “calculate repayments” again.
+
+  Your monthly repayments
+
+  Total you'll repay over the term -->
+
+  <!-- Completed results end -->
+   <!-- --> 
+  
+</body>
+</html>
