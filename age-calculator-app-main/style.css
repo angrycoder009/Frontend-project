@@ -1,0 +1,60 @@
+:root {
+
+    /* Colors Primary */
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+
+    /* Colors Neutral */
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+    --box-shadow: rgba(0, 0, 0, 0.2);
+
+    /* Font sizes */
+    --label-size-mobile: 0.7rem;
+    --input-size-mobile: 1.2rem;
+    --results-text-size-mobile: 3.2rem;
+    --error-msg-mobile: 0.55rem;
+
+    --label-size-800px: 0.75rem;
+    --input-size-800px: 1.2rem;
+    --results-text-size-800px: 4.4rem;
+    --error-msg-800px: 0.63rem;
+
+    --label-size-1200px: 0.85rem;
+    --input-size-1200px: 1.7rem;
+    --results-text-size-1200px: 5.5rem;
+    --error-msg-1200px: 0.75rem;
+
+    --footer-size: 0.6rem;
+    --footer-size-1200px: 0.8rem;
+
+    /* Border radius */
+    --border-radius-inputs: 7px;
+    --border-radius-main-right-bottom-mobile: 90px;
+    --btn-size-mobile: 65px;
+
+    --border-radius-main-right-bottom-800px: 125px;
+    --btn-size-800px: 75px;
+
+    --border-radius-main-right-bottom-1200px: 175px;
+    --btn-size-1200px: 90px;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-grey);
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.9rem;
+}
