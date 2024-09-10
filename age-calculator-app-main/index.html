@@ -17,10 +17,35 @@
 </head>
 <body>
     <div class="container">
+
+   
     <div class="input-container">
-    <label for="">DAY<input class="js-input-day"></label>
-    <label for="">MONTH<input class="js-input-month" ></label>
-    <label for="">YEAR<input  class="js-input-year"></label>
+      <div class="input-field">
+    <label  class="label">DAY</label>
+    <input class="js-input-day input"
+    placeholder="DD"
+    >
+    <span class="empty">This field is required</span>
+    <span class="invalid">Must be a valid day</span>
+  </div>
+
+
+  <div class="input-field">
+    <label class="label">MONTH </label>
+    <input class="js-input-month input" placeholder="MM">
+    <span class="empty">This field is required</span>
+    <span class="invalid">Must be a valid month</span>
+  </div>
+
+
+  <div class="input-field">
+    <label for="">YEAR</label>
+    <input  class="js-input-year input" placeholder="YYYY">
+    <span class="empty">This field is required</span>
+    <span class="invalid">Must be a valid month</span>
+  </div>
+
+
     <button onclick="getAge()">Calculate</button>
    </div>
    <div class="result-container">
