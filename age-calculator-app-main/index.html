@@ -7,51 +7,45 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Age calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-
-   
     <div class="input-container">
       <div class="input-field">
-    <label  class="label">DAY</label>
+    <h6>DAY</h6>
     <input class="js-input-day input"
     placeholder="DD"
     >
-    <span class="empty">This field is required</span>
-    <span class="invalid">Must be a valid day</span>
+    <small class="error-day"></small>
   </div>
 
 
   <div class="input-field">
-    <label class="label">MONTH </label>
+    <h6>MONTH</h6>
     <input class="js-input-month input" placeholder="MM">
-    <span class="empty">This field is required</span>
-    <span class="invalid">Must be a valid month</span>
+    <small class="error-month"></small>
+    <!-- <span class="invalid">Must be a valid month</span> -->
   </div>
 
 
   <div class="input-field">
-    <label for="">YEAR</label>
+    <h6>YEAR</h6>
     <input  class="js-input-year input" placeholder="YYYY">
-    <span class="empty">This field is required</span>
-    <span class="invalid">Must be a valid month</span>
+    <small class="error-year"></small>
+    <!-- <span class="invalid">Must be a valid month</span> -->
   </div>
 
 
-    <button onclick="getAge()">Calculate</button>
    </div>
+    <hr>
+   <button class="calculateBtn">
+    <img src="./assets/images/icon-arrow.svg" alt="">
+  </button>
    <div class="result-container">
-    <p class="js-years">--years</p>
-    <p class="js-months">--months</p>
-    <p class="js-days">--days</p>
+    <p class="js-years"><span>--</span>years</p>
+    <p class="js-months"><span>--</span>months</p>
+    <p class="js-days"><span>--</span>days</p>
    </div>
    </div>
   <!-- Day
