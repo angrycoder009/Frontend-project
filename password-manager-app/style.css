@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* #807C92 */
+    /* #23222A */
+}
+body{
+    background-color: #100F16;
+    height: 100vh;
+   
+}
+.heading{
+    color:#807C92 ;
+    text-align: center;
+    
+}
+div {
+    color: white;
+}
+
+.container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding: 5rem;
+    background-color:  #23222A ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+    
+}
+.result{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 1.0rem;
+    background-color: #100F16;
+    color:#807C92 ;
+    border: none;
+    font-size: 1.1rem;
+}
+input:focus {
+    outline: none; /* Removes the blue outline */
+}
+
+button{
+    padding: 1.0rem;
+    background-color: #A3FFAE;
+    border: none;
+    font-size:1.1rem ;
+    color: #807C92;
+}
+button:hover{
+    background-color: #100F16;
+    border: 2px solid #A3FFAE;
+    color: #A3FFAE;
+}
+.jsbtn{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 4.4rem;
+}

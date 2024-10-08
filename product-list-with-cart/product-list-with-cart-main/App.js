@@ -20,7 +20,16 @@ fetch('data.json')
         </div>
       </div>
        `;
-    });
-    document.querySelector('.listings').innerHTML = productHTML
+    }); 
+    document.querySelector('.listings').innerHTML = productHTML;
+    document.querySelector('button').addEventListener('click',()=>{
+      let currentValue = parseInt(document.querySelector('.Your-cart').innerText) || 0;
+    
+      // Increment the value
+      currentValue += 1;
+      
+      // Update the content of the .Your-cart element
+      document.querySelector('.Your-cart').innerHTML = `Your Cart(${currentValue})`;
+    })
   })
   .catch(error => console.error('There was a problem with the fetch operation:', error));
