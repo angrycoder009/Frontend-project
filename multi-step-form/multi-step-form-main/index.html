@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="textbox">
+  <div class="text-1">margin</div>
+  <div class="text-2">
+   <h1>Personal Info</h1>
+    <p class="para-text">please provide your name, email address,and phone number</p>
+    <div  class="field-content">
+    <small class="name-text">Name</small>
+     <input class="button-text" type="text" placeholder ="e.g. Stephen King">
+    </div>
+
+    <div class="field-content">
+      <small class="name-text">Email Address</small>
+       <input class="button-text" type="text" placeholder="e.g. StephenKing@lorem.com">
+      </div>
+
+      <div class="field-content">
+        <small class="name-text">Phone Number</small>
+         <input class="button-text" type="text" placeholder="e.g.+1223 4567 890 ">
+        </div>
+
+        <div class="button"> <button class="button-style" onclick ="nextStep(2)" > Next Step</button></div>
+          
+</div>
+
+
+<div class="text-3" style="display: none;">
+  <h1>Select your plan</h1>
+  <p>You have the option of monthly or yearly billing.</p>
+  <div class="parent-box">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+  <div class="button"> <button class="button-style" onclick="prevStep(1)" > Back</button></div>
+  <div class="button"> <button class="button-style" onclick="nextStep(3)" > Next Step</button></div>
+
+</div>
+<div class="text-4" style="display: none;">
+  <h1>Select your plan</h1>
+  <div class="button"> <button class="button-style" onclick="prevStep(2)" > Back</button></div>
+  <div class="button"> <button class="button-style" onclick="nextStep(4)" > Next Step</button></div>
+
+</div>
+
+
+
+</div>
+ <script src="App.js"></script>
+</body>
+</html>

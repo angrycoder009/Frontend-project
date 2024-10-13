@@ -1,0 +1,76 @@
+.textbox{
+   width: 800px;
+   height: 600px;
+background-color: white;
+margin-top: 30px;
+border-radius: 18px;
+display: grid;
+grid-template-columns: 300px 1fr;
+
+}
+body{
+    background-color: rgb(225, 245, 252);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-1{
+background-color: blue;
+ border-top-left-radius: 18px;
+
+}
+.text-2 ,.text-3{
+  padding: 3rem;
+}
+.para-text{
+  margin-top: 0px;
+    color: silver;
+    margin-bottom: 50px;
+}
+.name-text{
+ display: block;   
+ font-family: Arial;
+ font-size: 15px;
+ margin-bottom: 6px;
+}
+.button-text{
+    color: rgb(70, 62, 62);
+    padding-left:6px ;
+    padding-right:170px ;
+    padding-top: 11px; 
+    padding-bottom: 11px;
+    border-radius: 6px;
+    
+    font-size: 15px;
+    border-style: solid;
+}
+.field-content{
+   margin-bottom: 2rem;
+} 
+.button{
+    display: flex;
+    justify-content: end;
+margin-top: 60px;
+
+}
+.button-style{
+    background-color: rgb(12, 12, 109);
+    color: white;
+    padding: 15px 23px;
+    font-size: 16px;
+    font-weight: solid;
+    border: none;
+    border-radius: 8px;
+    font-family: Arial;
+}
+.parent-box{
+    display: flex;
+    flex-direction: row;
+}
+.box{
+    width: 3rem;
+    height: 2rem;
+    gap: 5px;
+    border: 1px solid black;
+
+}
