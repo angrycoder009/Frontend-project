@@ -17,3 +17,15 @@ function prevStep(step){
         document.querySelector('.text-4').style.display = 'none';
     }
 }
+
+document.querySelector('button').addEventListener('click', (e) => {
+    const name = document.querySelectorAll('.button-text');
+    console.log(name);
+    
+    if (name.value === '') {
+        return;
+    }
+    
+    // Assuming you want to pass a step based on some condition
+    nextStep(2);  // You need to define the step value (e.g., step 2 or step 3)
+});
