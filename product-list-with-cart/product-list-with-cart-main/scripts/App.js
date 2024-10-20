@@ -1,3 +1,5 @@
+import {cart ,addToCart,showCartQuantity} from './cart.js'
+
 // Fetch the data.json file
 fetch("data.json")
   .then((response) => {
@@ -7,6 +9,7 @@ fetch("data.json")
     return response.json();
   })
   .then((data) => {
+    // console.log(data)
     let productHTML = "";
     data.forEach((data) => {
       productHTML += `
@@ -22,47 +25,27 @@ fetch("data.json")
        `;
     });
     document.querySelector(".listings").innerHTML = productHTML;
-    document.querySelector("button").addEventListener("click", () => {
-      let currentValue =
-        parseInt(document.querySelector(".Your-cart").innerText) || 0;
-
-      // Increment the value
-      currentValue += 1;
-
-      // Update the content of the .Your-cart element
-      document.querySelector(
-        ".Your-cart"
-      ).innerHTML = `Your Cart(${currentValue})`;
-    });
-
+  
     document.querySelectorAll(".js-add-to-cart").forEach((button) => {
       button.addEventListener("click", () => {
         const productName = button.dataset.productName;
         console.log(productName);
-
-        let matchingItem;
-        cart.forEach((item) => {
-          //if it is same element already exist
-          if (productName === item.productName) {
-            //store them in matching item
-            matchingItem = item;
+      addToCart(productName)
+      showCartQuantity();
+        console.log(cart)
+       
+        let matchingItemProduct;
+        data.forEach((data)=>{
+          if(productName === data.name){
+            matchingItemProduct = data
           }
-        });
-        if (matchingItem) {
-          //if it's true in crease by one
-          matchingItem.quantity += 1;
-        } else {
-          cart.push({
-            productName: productName,
-            quantity: 1,
-          });
-        }
-
-        console.log(cart);
+        })
+         
+        console.log(matchingItemProduct)
       });
+    
     });
-
-    console.log(cart);
+  
   })
   .catch((error) =>
     console.error("There was a problem with the fetch operation:", error)

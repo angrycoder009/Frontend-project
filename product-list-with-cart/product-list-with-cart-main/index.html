@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <title>Frontend Mentor | Product list with cart</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <section class="list">
-    <h1 class="heading">Desserts</h1>
-    <div class="listings">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Product list with cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="list">
+      <h1 class="heading">Desserts</h1>
+      <div class="listings"></div>
+      <div class="cart"></div>
+    </section>
+    <section class="cart-details">
+      <h1 class="Your-cart">
+        Your Cart (<span class="js-cart-quantity">0</span>)
+      </h1>
+      <!-- <img style="width: 7rem;height: 7rem; margin-left: 1.6rem;" src="assets/images/illustration-empty-cart.svg" alt=""> -->
+      <div class="pickedDiv">
+        <div class="productOrderSummary">
+          <p class="cartItemName">Macaron Mix of Five</p>
+          <div class="priceOrderSummary">
+            <span class="pickedAmount">1x</span
+            ><span class="pickedPrice">@$8.00</span
+            ><span class="pickedPriceTotal">$8.00</span>
+          </div>
+         
+        </div>
+        <img style="width: 1rem;" src="./assets/images/icon-remove-item.svg" class="removeButton" />
       </div>
-    <div class="cart"></div>
-  </section>
-  <section class="cart-details">
-  <h1 class="Your-cart">Your Cart(0)</h1>
-  <img style="width: 7rem;height: 7rem; margin-left: 1.6rem;" src="assets/images/illustration-empty-cart.svg" alt="">
-  <p>Your added items will appear here</p>
-  </section>
-  <script src="scripts/cart.js"></script>
-<script src="scripts/App.js"></script>
-</body>
+      <p>Your added items will appear here</p>
+    </section>
+
+    <script type="module" src="scripts/App.js"></script>
+  </body>
 </html>
